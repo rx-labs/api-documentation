@@ -175,9 +175,71 @@ MERCHANT_ID : {MERCHANT_ID_RECEIVED_FROM_RX_LABS}
 {
   "success" : true,
   "api_version" : 1,
-  "rx_token" : "123k4kjh34kjhk2jg34kjgkjg234",
-  "qr_code_image" : "https://api.rxlabs.io/rx/qrcode/asdasdasder34",
-  "rx_url" : "https://api.rxlabs.io/rx/3kj4n2kj3n4kjn234"
+  "data" : {
+    "rx_token" : "123k4kjh34kjhk2jg34kjgkjg234",
+    "qr_code_image" : "https://api.rxlabs.io/rx/qrcode/123k4kjh34kjhk2jg34kjgkjg234",
+    "rx_url" : "https://api.rxlabs.io/rx/123k4kjh34kjhk2jg34kjgkjg234"
+  }
+}
+```
+#### Failure [!= 200]
+```json
+{
+  "success" : false,
+  "api_version" : 1,
+  "message" : "Something went wrong"
+}
+```
+
+## To retrieve a signed prescription
+### Endpoint
+```xml
+GET /api/v1/rx/{rx_token}
+```
+### Headers
+```
+MERCHANT_ID : {MERCHANT_ID_RECEIVED_FROM_RX_LABS}
+```
+### Responses
+#### Success [200]
+```json
+{
+  "success" : true,
+  "api_version" : 1,
+  "data" : {
+    "doctor" : {
+      "email" : "akshay@rxlabs.io",
+      "phone_number" : "9970095388"
+    },
+    "clinic" : {
+      "name" : "Great Clinic",
+      "phone_number" : "9988334455",
+      "pin_code" : "411045",
+    },
+    "patient" : {
+      "email" : "akshay2@rxlabs.io",
+      "phone_number" : "9970095388"
+    },
+    "date" : "1988-12-04T00:00:00.000Z",
+    "rx" : [
+      {
+        "name" : "Tablet 1",
+        "type" : "tablet",
+        "strength" : "",
+        "frequency" : "once daily",
+        "instructions" : "",
+        "alergy_instructions" : ""
+      },
+      {
+        "name" : "Tablet 2",
+        "type" : "tablet", 
+        "strength" : "",
+        "frequency" : "1-1-1",
+        "instructions" : "Before meal",
+        "alergy_instructions" : ""
+      }
+    ]
+  }
 }
 ```
 #### Failure [!= 200]
