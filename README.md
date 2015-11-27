@@ -149,6 +149,7 @@ MERCHANT_ID : {MERCHANT_ID_RECEIVED_FROM_RX_LABS}
     "email" : "akshay2@rxlabs.io",
     "phone_number" : "9970095388"
   },
+  "date" : "1988-12-04T00:00:00.000Z",
   "rx" : [
     {
       "name" : "Tablet 1",
@@ -207,20 +208,6 @@ MERCHANT_ID : {MERCHANT_ID_RECEIVED_FROM_RX_LABS}
   "success" : true,
   "api_version" : 1,
   "data" : {
-    "doctor" : {
-      "email" : "akshay@rxlabs.io",
-      "phone_number" : "9970095388"
-    },
-    "clinic" : {
-      "name" : "Great Clinic",
-      "phone_number" : "9988334455",
-      "pin_code" : "411045",
-    },
-    "patient" : {
-      "email" : "akshay2@rxlabs.io",
-      "phone_number" : "9970095388"
-    },
-    "date" : "1988-12-04T00:00:00.000Z",
     "rx" : [
       {
         "name" : "Tablet 1",
