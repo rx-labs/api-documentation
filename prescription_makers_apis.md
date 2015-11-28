@@ -33,7 +33,6 @@ MERCHANT_ID : {MERCHANT_ID_RECEIVED_FROM_RX_LABS}
   "patient" : {
     "email" : "akshay2@rxlabs.io",
     "phone_number" : "9970095388",
-    /* For delivery purpose */
     "address" : "ABC 123",
     "labdmark" : "",
     "city" : "",
