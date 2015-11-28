@@ -90,20 +90,30 @@ MERCHANT_ID : {MERCHANT_ID_RECEIVED_FROM_RX_LABS}
     "state" : "Maharashtra",
     "country": "India",
     "pin_code" : "411045",
-    "degree" : "MBBS, MD General",
-    "category" : "General Physician",
+    "education" : [
+      {
+        "degress" : "BDS",
+        "college" : "Rajiv Gandhi University Of Health Sciences, Karnataka",
+        "graduation_year" : ""
+      }
+    ],
+    "qualifications" : "BDS , MDS - Prosthodontics",
+    "specialities" : "Prosthodontist , Dentist , Dental Surgeon",
+    "experience_in_years" : "17",
     "rating_percentage" : 10 
   },
-  "clinic" : {
-    "name" : "Great clinic",
-    "phone_number" : "9970095388",
-    "address_line_1": "ABC",
-    "address_line_2" : "XYZ",
-    "city" : "Pune",
-    "state" : "Maharashtra",
-    "country": "India",
-    "pin_code" : "411045"
-  }
+  "clinics" : [
+    {
+      "name" : "Great clinic",
+      "phone_number" : "9970095388",
+      "address_line_1": "ABC",
+      "address_line_2" : "XYZ",
+      "city" : "Pune",
+      "state" : "Maharashtra",
+      "country": "India",
+      "pin_code" : "411045"
+    }
+  ]
 }
 ```
 ### Responses
