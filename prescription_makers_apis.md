@@ -86,11 +86,13 @@ MERCHANT_ID : {MERCHANT_ID_RECEIVED_FROM_RX_LABS}
   },
   "clinic" : {
     "name" : "Great Clinic",
-    "phone_number" : "9988334455"
+    "phone_number" : "9988334455",
+    "pin_code" : "411045"
   },
   "patient" : {
     "email" : "akshay2@rxlabs.io",
-    "phone_number" : "9970095388"
+    "phone_number" : "9970095388",
+    "pin_code" : "411045"
   },
   "date" : "1988-12-04T00:00:00.000Z",
   "diagnosis" : "General fever",
