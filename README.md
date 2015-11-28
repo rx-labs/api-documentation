@@ -60,7 +60,7 @@ MERCHANT_ID : {MERCHANT_ID_RECEIVED_FROM_RX_LABS}
 }
 ```
 
-## To register Doctor with RxLabs system
+## To register Doctor with RxLabs system [OPTIONAL]
 This API helps merchant to register a doctor on the platform.
 
 ### Endpoint
