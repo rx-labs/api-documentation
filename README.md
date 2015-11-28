@@ -19,29 +19,9 @@ MERCHANT_ID : {MERCHANT_ID_RECEIVED_FROM_RX_LABS}
   "email" : "akshay@rxlabs.io",
   "first_name" : "Akshay",
   "last_name" : "Deo",
-  "profile_pic_url" : "",
   "sex" : "Male",
-  "age" : 24,
   "birth_date" : "1988-12-04T00:00:00.000Z",
   "phone_number" : "9970095388",
-  "address_line_1": "ABC",
-  "address_line_2" : "XYZ",
-  "city" : "Pune",
-  "state" : "Maharashtra",
-  "country": "India",
-  "pin_code" : "411045",
-  "alergic_background" : [
-    {
-      "alergic_to" : "",
-      "reason" : "",
-      "dignosed_by" : ""
-    },
-    {
-      "alergic_to" : "",
-      "reason" : "",
-      "dignosed_by" : ""
-    }
-  ]
 }
 ```
 ### Responses
@@ -63,7 +43,7 @@ MERCHANT_ID : {MERCHANT_ID_RECEIVED_FROM_RX_LABS}
 ```
 
 ## To register Doctor with RxLabs system
-This API helps merchant to register a doctor on the platform. `email`, `first_name`, `last_name`, `phone_number`,`age`, `sex`, `degree`, `category` are the compulsory fields for doctors info. `clinic` information helps us to sign the `prescriptions` more securly.
+This API helps merchant to register a doctor on the platform.
 
 ### Endpoint
 ```xml
@@ -76,44 +56,22 @@ MERCHANT_ID : {MERCHANT_ID_RECEIVED_FROM_RX_LABS}
 ### Body
 ```json
 {
-  "doctor" : {
-    "email" : "akshay@rxlabs.io",
-    "first_name" : "Akshay",
-    "last_name" : "Deo",
-    "age" : 30,
-    "sex" : "Male",
-    "profile_pic_url" : "",
-    "phone_number" : "9970095388",
-    "address_line_1": "ABC",
-    "address_line_2" : "XYZ",
-    "city" : "Pune",
-    "state" : "Maharashtra",
-    "country": "India",
-    "pin_code" : "411045",
-    "education" : [
-      {
-        "degress" : "BDS",
-        "college" : "Rajiv Gandhi University Of Health Sciences, Karnataka",
-        "graduation_year" : ""
-      }
-    ],
-    "qualifications" : "BDS , MDS - Prosthodontics",
-    "specialities" : "Prosthodontist , Dentist , Dental Surgeon",
-    "experience_in_years" : "17",
-    "rating_percentage" : 10 
-  },
-  "clinics" : [
+  "email" : "akshay@rxlabs.io",
+  "first_name" : "Akshay",
+  "last_name" : "Deo",
+  "age" : 30,
+  "sex" : "Male",
+  "education" : [
     {
-      "name" : "Great clinic",
-      "phone_number" : "9970095388",
-      "address_line_1": "ABC",
-      "address_line_2" : "XYZ",
-      "city" : "Pune",
-      "state" : "Maharashtra",
-      "country": "India",
-      "pin_code" : "411045"
+      "degress" : "BDS",
+      "college" : "Rajiv Gandhi University Of Health Sciences, Karnataka",
+      "graduation_year" : ""
     }
-  ]
+  ],
+  "qualifications" : "BDS , MDS - Prosthodontics",
+  "specialities" : "Prosthodontist , Dentist , Dental Surgeon",
+  "experience_in_years" : "17",
+  "rating_percentage" : 10 
 }
 ```
 ### Responses
@@ -152,8 +110,7 @@ MERCHANT_ID : {MERCHANT_ID_RECEIVED_FROM_RX_LABS}
   },
   "clinic" : {
     "name" : "Great Clinic",
-    "phone_number" : "9988334455",
-    "pin_code" : "411045",
+    "phone_number" : "9988334455"
   },
   "patient" : {
     "email" : "akshay2@rxlabs.io",
