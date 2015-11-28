@@ -6,7 +6,7 @@ RxLabs is a technology startup helping helthcare startups to streamline the exec
 API | Usage
 ----|------
 /api/v1/user/register | To register user for getting rx notification
-/api/v1/doctor/register | To register doctor for rx records
+[OPTIONAL] /api/v1/doctor/register | To register doctor for rx records
 /api/v1/rx/sign | To sign a rx with RxLabs to get the rx_token and QR code
 /api/v1/rx/validate/{rx_token} | To validate a rx_token with User info
 /api/v1/rx/{rx_token} | To retreive the prescription for rx_token with User info
