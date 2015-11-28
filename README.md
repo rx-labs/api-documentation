@@ -160,6 +160,7 @@ MERCHANT_ID : {MERCHANT_ID_RECEIVED_FROM_RX_LABS}
     "phone_number" : "9970095388"
   },
   "date" : "1988-12-04T00:00:00.000Z",
+  "diagnosis" : "General fever",
   "rx" : [
     {
       "name" : "Tablet 1",
